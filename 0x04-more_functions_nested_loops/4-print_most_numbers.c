@@ -2,20 +2,20 @@
 
 /**
  * print_most_numbers - Print the numbers since 0 up to 9
- *@i: Prints the numbers excluding 2 and 4
+ *Description: Prints the numbers excluding 2 and 4
  * Return: The numbers since 0 up to 9
  */
 
 void print_most_numbers(void)
 
 {
-	char i;
+	char c;
 
-	for (i = '0'; i <= '9'; i++)
+	for (c = '0'; c <= '9'; c++)
 	{
-	if (!(i == '2' || i == '4'))
+	if (!(c == '2' || i == '4'))
 
-	_putchar(i);
+	_putchar(c);
 	}
 	_putchar('\n');
 }
