@@ -1,27 +1,27 @@
 #include "main.h"
-
 /**
- *_strncpy - function that copies a string
- *
- * @src: The source of strings
- * @dest: The destination of the string
- * @n: The length of int
- *
- * Return: pointer to the resulting string dest
+ * _strcmp - compare 2 string
+ * @s1:string
+ * @s2:strmp
+ * Return:int
+ * Bwave/ Bright
  */
-char *_strncpy(char *dest, char *src, int n)
+int _strcmp(char *s1, char *s2)
 {
-int i;
-
-	for (i = 0; i < n && *(src + i); i++)
+	while (((*s1 != '\0') && (*s2 != '\0')) && (*s1 == *s2))
 	{
-		*(dest + i) = *(src + i);
+		s1++;
+		s2++;
 	}
-	for (; i < n; i++)
-	{
-	*(dest + i) = '\0';
-	}
-	return (dest);
 
+	if (*s1 == *s2)
+	{
+		return (0);
+	}
+
+	else
+	{
+		return (*s1 - *s2);
+	}
 }
 
